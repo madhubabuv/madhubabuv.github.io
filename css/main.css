@@ -1504,6 +1504,7 @@ header .logo a {
 .intro-info {
 	margin-top: 4.2rem;
 }
+
 .intro-info img {
 	height: 25rem;
 	width: 27rem;
@@ -1515,6 +1516,13 @@ header .logo a {
 	text-align: left;
 	margin-left:-100px;
 	padding-left: 13rem;
+}
+.about-skill-image{
+width:30%;
+height:30%;
+padding:20px;
+margin-bottom:20px;
+border-radius:20px;
 }
 
 .about-content {
@@ -1550,10 +1558,11 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
 	font-size: 1.5rem;
+	padding:5px;
 	line-height: 1;
 }
 .about-content .skill-bars {
-	margin-top: 6rem;
+	margin-top:-4rem;
 }
 
 .button-section {
@@ -1633,6 +1642,7 @@ header .logo a {
 #resume .resume-header h2 {
 	color: #FF0077;
 }
+
 
 #resume .resume-timeline {
 	position:relative;
