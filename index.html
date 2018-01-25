@@ -35,6 +35,28 @@ table, th, td {
     border: 0px;
     border-collapse: collapse;
 }
+div.gallery {
+    margin: 5px;
+    border: 1px  #ccc;
+    float: left;
+    width: 150px;
+	padding:10px;
+	margin-bottom:50px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.gallery imghover {
+    width: 200%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
 </style>
 
 </head>
@@ -192,29 +214,40 @@ table, th, td {
 
    		</div>
    		<div >
-   		<h3>Hard Ware</h3>
- <table style="width:100%">
+   		<h3>I am a Drone Pilot</h3>
 
-  <tr>
-    <td><img style="width:250px" src="images/drones/ardrone.jpeg" alt="ardrone"/></td>
-    <td><img style="width:250px" src="images/drones/bebop.jpg" alt="bebop"/></td>
-	<td><img style="width:250px" src="images/drones/matrice_100.jpg" alt="matrice_100"/></td>
-    <td><img style="width:250px" src="images/drones/phantom_pro.jpg" alt="matrice_100"/></td>
-	<td><img style="width:250px" src="images/drones/custom_drone.jpeg" alt="Custom_drone"/></td>
-  </tr>
-  <tr style="text-align:center">
-    <td>Parrot Ardrone 2.0</td>
-    <td>Parrot Bebop 2.0</td>
-    <td>DJI Matrice 100</td>
-    <td>DJI Phantom Pro</td>
-    <td>Custom Drone with PixHawk</td>
+			<div class="gallery">
+				<img src="images/drones/ardrone.jpeg" alt="Fjords" title="Parrot AR Drone 2.0"width="300" height="200">
+				<div class="desc">AR Drone 2.0</div>
+			  
+			</div>
 
-    
-  </tr>
-  <tr>
-  </tr>
+			<div class="gallery">
 
-</table> 
+				<img src="images/drones/bebop.jpg" alt="Forest" title="Parrot Beebop">
+				<div class="desc">Bebop</div>
+			  
+			</div>
+
+			<div class="gallery">
+				<img src="images/drones/matrice_100.jpg" alt="Northern Lights" title="DJI Matrice 100" >
+				<div class="desc">Matrice 100</div>
+			  
+			</div>
+
+			<div class="gallery">
+
+				<img src="images/drones/phantom_pro.jpg" alt="Mountains" title="DJI Phantom Pro"width="300" height="200">
+
+			  <div class="desc">Phantom Pro</div>
+			</div>
+			<div class="gallery">
+
+				<img src="images/drones/custom_drone.jpeg" alt="Mountains" title="Custom Drone with Pixhawk" width="300" height="200">
+
+			  <div class="desc">Custom Drone</div>
+			</div>
+			</div>
 
    	<div class="row button-section">
    		<div class="col-twelve">
