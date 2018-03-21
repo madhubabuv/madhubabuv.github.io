@@ -454,6 +454,41 @@ Landing of a Quadrotor"</i>, Europian Control Conference ECC 2018.<br>See Public
    			<h2 style="text-align:center;margin-left:-200px">Projects</h2>
 
    		</div> <!-- /resume-header -->
+		   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-tasks"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<img src="images/portfolio/undemon.png" alt="Avatar" class="timeline-header-image">
+						<a href="https://youtu.be/z1vKHM0R5K8" class="button" target="_blank">Video</a>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>UnDEMon: Unsupervised Depth and EgoMotion Network</h4>
+	   					<p>This project presents a deep network based unsupervised visual odometry system for 6-DoF camera pose estimation and finding dense depth map for its monocular view. The
+proposed network is trained using unlabeled binocular stereo
+image pairs and is shown to provide superior performance in
+depth and ego-motion estimation compared to the existing stateof-the-art. This is achieved by introducing a novel objective
+function and training the network using temporally alligned
+sequences of monocular images. The objective function is based
+on the Charbonnier penalty applied to spatial and bi-directional
+temporal reconstruction losses. The overall novelty of the
+approach lies in the fact that the proposed deep framework
+combines a disparity-based depth estimation network with
+a pose estimation network to obtain absolute scale-aware 6-
+DoF camera pose and superior depth map. According to our
+knowledge, such a framework with complete unsupervised endto-end learning has not been tried so far, making it a novel
+contribution in the field. The effectiveness of the approach is
+demonstrated through performance comparison with the stateof-the-art methods on KITTI driving dataset.
+	   					</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
 
    		<div class="col-twelve">
 
@@ -493,8 +528,22 @@ controller, a RL based controller has been trained and tested in Gazebo simulato
 
 	   				<div class="timeline-content">
 	   					<h4>Autonomous landing of quadrotor using Reinforcement Learning</h4>
-	   					<p>This Project includes landing of quadrotor on an Aruco marker. Two markers have been used, one for driving the drone towards landing marker and another for exact landing location. The general problems such as
-marker loss, down wash of propellers are solved in this project.
+	   					<p>This project looks into the problem of precise
+autonomous landing of an Unmanned Aerial Vehicle (UAV)
+which is considered to be a difficult problem as one has
+to generate appropriate landing trajectories in presence of
+dynamic constraints, such as, sudden changes in wind velocities
+and directions, downwash effects, change in payload etc. The
+problem is further compounded due to uncertainties arising
+from inaccurate model information and noisy sensor readings.
+The problem is partially solved by proposing a Reinforcement
+Learning (RL) based controller that uses Least Square Policy
+Iteration (LSPI) to learn the optimal control policies required
+for generating these trajectories. The efficacy of the approach
+is demonstrated through both simulation and real-world experiments with actual Parrot AR drone 2.0. According to our
+study, this is the first time such experimental results have been
+presented using RL based controller for drone landing, making
+it a novel contribution in this field.
 	   					</p>
 	   				</div>
 
@@ -512,9 +561,13 @@ marker loss, down wash of propellers are solved in this project.
 
 	   				<div class="timeline-content">
 	   					<h4>Building a custom quadrotor using PixHawk</h4>
-	   					<p>In this project a quad rotor from the scratch has been built. The payload capacity has been made for 750 g.
-So that it can carry a voladine Lidar for visual survoing. Pixhawk 2.4.8 with Ardu Pilot has been used as an
-autopilot for this. This quad rotor is currently being used for the visual survoing currently in our lab.
+	   					<p>In this project, a gradient decent based methodology
+is employed to tune the Proportional-Integral-Derivative (PID)
+controller parameters for AR Drone quadrotor. The three PID
+controller parameters, proportional gain (Kp), integral gain (Ki)
+and derivative gain (Kd) are tuned online while flying. The
+proposed technique has been demonstrated through two test
+cases. One is the way-point navigation and other is the leaderfollower formation control.
 	   					</p>
 	   				</div>
 
@@ -553,10 +606,13 @@ parameters according to its error and velocity.
 
 	   				<div class="timeline-content">
 	   					<h4>Autonomous leader follower architecture for drones.</h4>
-	   					<p>In this project, the idea is to design a low cost architecture for leader follower drones. For that raspberry pi3
-has been used as computation platform. The follower will localize it self using an Aruco Marker pasted on the
-back of the leader. The inertial odometry has been calculated and filtered using EKF. This IO has been used
-to regain the marker loss position. The validation of the architecture has been done Parrot AR Drones
+	   					<p>In this project, we present a low cost leader-follower formation control architecture of UAVs. The low cost architecture comprises of
+two A.R. drones and two Raspberry Pi. The computation of each
+drones has been done in cost effective Raspberry Pi. The relative
+localization among the drones has been done using Aruco Marker.
+A gradient descent based self-tuning PID controller is used by the
+follower drone to preserve the formation with respect to the leader
+drone. 
 	   					</p>
 	   				</div>
 
@@ -595,10 +651,10 @@ for stability has been derived using the ZMP stability criteria.
 
 	   				<div class="timeline-content">
 	   					<h4>Path finding robot using Q-learning</h4>
-	   					<p>In this project an image based path and motion planing algorithm using a reinforcement learning method
-known as Q learning has been used. This will take the feed form the camera on top of it and calculates path
-from the current position to the goal online. The method finds an optimal path form the current position to
-goal position.
+	   					<p>The main objective of this project is to develop an autonomous robot that show the use of Q-learning for navigation in a complete unknown environment. 
+							This will calculate the shortest path from current state to goal state by analyzing the environment through captured images.
+							Further the captured images will be processed through image processing and machine learning techniques. The proposed method also takes care of the obstacles present in that environment. Initially, the unknown environment will be captured using a camera. Obstacle detection method will be applied on it. 
+							Then the grid based map obtained from vision based obstacle detection method will be given to Q-Learning algorithm which will be further made live with motion planning.
 	   					</p>
 	   				</div>
 
