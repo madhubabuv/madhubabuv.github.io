@@ -104,7 +104,7 @@
                 <tbody>
 
 
-                <tr id="icra_2020">
+                <!--tr id="icra_2020">
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
                             <img src='new_imgs/icra_2020.png'>
@@ -153,11 +153,11 @@
                         outdoor driving KITTI and Oxford-robot car datasets, thereby,
                         creating a new benchmark in this field</i></p>
                     </td>
-                </tr> <!--ICRA 2020-->
+                </tr--> <!--ICRA 2020-->
                 <tr id="aaai_20" >
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
-                            <img src='new_imgs/aaai_2020.jpg'>
+                            <img src='new_imgs/eccv_2020.jpg'>
                         </div>
 
                     </td>
@@ -172,7 +172,7 @@
                         <br><br>
                       <p>In this paper, we look into the problem of estimating per-pixel depth map for
                           monocular night images.</p>
-                        <em>CVPR</em>, 2020, (*in Review) | <a href="javascript:toggleblock('aaai_20_abs')">Abstract</a>
+                        <em>ECCV</em>, 2020, (*in Review) | <a href="javascript:toggleblock('aaai_20_abs')">Abstract</a>
                         <br>
                       <p align="justify"> <i id="aaai_20_abs" style="display: none;">
                         In this paper, we look into the problem of estimating
@@ -210,6 +210,66 @@
 
                     </td>
                 </tr> <!--AAAI 2020-->
+                <tr id='at_icra_20' >
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='new_imgs/roman_2019.jpg'>
+                        </div>
+
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                        <a href="#roman_19">
+                            <papertitle>Attentive Task-Net: Self Supervised Task-Attention Network for
+Imitation Learning using Video Demonstration</papertitle>
+                        </a>
+                        <br>
+                        <a href="https://in.linkedin.com/in/kartik-ramachandruni-88295013a">Kartik Ramachandruni</a>,
+                        <strong>Madhu Vankadari</strong>,
+                       <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>,
+                        <a href="https://iitk.ac.in/new/samrat-dutta">Samrat Dutta</a>,
+                      <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>
+                        <br>
+                        <br>
+                      <p>In this paper we present a new depth and temporal-aware visual place recognition system
+                          that solves the opposing viewpoint, extreme appearance-change visual place recognition
+                          problem. </p>
+                        <em>ICRA</em>, 2020 (*Accepted) | <a href="javascript:toggleblock('at_icra_20_abs')">Abstract</a>| <!--a href="#">Accepted</a> | <a href="data/roman_19.pdf">Slides</a-->
+                        <br>
+                      <p align="justify"> <i id="at_icra_20_abs" style="display: none;">
+                        This paper proposes an end-to-end self-supervised
+						feature representation network named Attentive Task-Net or
+						AT-Net for video-based task imitation. The proposed AT-Net
+						incorporates a novel multi-level spatial attention module to
+						identify the intended task demonstrated by the expert. The
+						neural connections in AT-Net ensure the relevant information
+						in the demonstration is amplified and the irrelevant information
+						is suppressed while learning task-specific feature embeddings.
+						This is achieved by a weighted combination of multiple inter-
+						mediate feature maps of the input image at different stages of
+						the CNN pipeline. The weights of the combination are given by
+						the compatibility scores, predicted by the attention module for
+						respective feature maps. The AT-Net is trained using a metric
+						learning loss which aims to decrease the distance between the
+						feature representations of concurrent frames from multiple view
+						points and increase the distance between temporally consecutive
+						frames. The AT-Net features are then used to formulate a
+						reinforcement learning problem for task imitation. Through ex-
+						periments on the publicly available Multi-view pouring dataset,
+						it is demonstrated that the output of the attention module
+						highlights the task-specific objects while suppressing the rest
+						of the background. The efficacy of the proposed method is
+						further validated by qualitative and quantitative comparison
+						with a state-of-the-art technique along with intensive ablation
+						studies. The proposed method is implemented to imitate a
+						pouring task where an RL agent is learned with the AT-Net in
+						Gazebo simulator. Our findings show that the AT-Net achieves
+						6.5% decrease in alignment error along with a reduction in the
+						number of training iterations by almost 155k over the state-of-
+						the-art while satisfactorily imitating the intended task.</i></p>
+
+
+                    </td>
+                </tr> <!--ICRA 2020-->
                 <tr id="ijcai_19" >
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
@@ -307,60 +367,7 @@
 
                     </td>
                 </tr> <!--ICRA 2019-->
-                <tr id='roman_19' >
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <img src='new_imgs/roman_2019.jpg'>
-                        </div>
-
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="#roman_19">
-                            <papertitle>SMAK-Net: Self Supervised Multi-level Spatial Attention Network
-                              for Knowledge Representation towards Imitation Learning</papertitle>
-                        </a>
-                        <br>
-                        <a href="https://in.linkedin.com/in/kartik-ramachandruni-88295013a">Kartik Ramachandruni</a>,
-                        <strong>Madhu Vankadari</strong>,
-                       <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>,
-                        <a href="https://iitk.ac.in/new/samrat-dutta">Samrat Dutta</a>,
-                      <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>
-                        <br>
-                        <br>
-                      <p>In this paper we present a new depth and temporal-aware visual place recognition system
-                          that solves the opposing viewpoint, extreme appearance-change visual place recognition
-                          problem. </p>
-                        <em>RoMAN</em>, 2019 | <a href="javascript:toggleblock('roman_19_abs')">Abstract</a>| <a href="https://ieeexplore.ieee.org/document/8956303">Paper</a> | <a href="data/roman_19.pdf">Slides</a>
-                        <br>
-                      <p align="justify"> <i id="roman_19_abs" style="display: none;">
-                        This paper proposes an end-to-end self-supervised
-                        feature representation network named SMAK-Net for Imitation
-                        Learning. The proposed SMAK-Net incorporates a novel multilevel spatial attention module to amplify the relevant and
-                        suppress the irrelevant information while learning task-specific
-                        feature embeddings. The multi-level attention module takes
-                        multiple intermediate feature maps of the input image at
-                        different stages of the CNN pipeline and results a 2D matrix of
-                        compatibility scores for each feature map with respect to the
-                        given task. The weighted combination of the feature vectors
-                        with the scores estimated from attention modules leads to a
-                        more task specific feature representation of the input images.
-                        We have trained the network using a metric learning loss which
-                        aims to decrease the distance between the feature representations of simultaneous frames from multiple view points and
-                        increases the distance between the neighboring frames of the
-                        same view point. The experiments are performed on the publicly
-                        available Multi-View pouring dataset [1]. The outputs of the
-                        attention module are demonstrated to highlight the task specific
-                        objects while suppressing the rest of the background in the
-                        input image. The proposed method is validated by qualitative
-                        and quantitative comparisons with the state-of-the art technique
-                        TCN [1] along with intensive ablation studies. This method is
-                        shown to significantly outperform TCN by 6:5% in the temporal
-                        alignment error metric while reducing the total number of
-                        training steps by 155K.</i></p>
-
-
-                    </td>
-                </tr> <!--ROMAN 2019-->
+                
                 <tr id='iros_18' >
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
