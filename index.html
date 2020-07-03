@@ -167,49 +167,44 @@
                     </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
                         <a href="#aaai_20">
-                            <papertitle>Unsupervised Monocualar Depth estimation for Night-time Images </papertitle>
+                            <papertitle>Unsupervised Monocular Depth Estimation for Night-time Images using Adversarial Domain Feature Adaptation </papertitle>
                         </a>
                         <br>
                         <strong>Madhu Vankadari</strong>,
+			<a href="https://www.roboticvision.org/rv_person/sourav-garg/">Sourav Garg</a>,
                         <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
-                        <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>
+                        <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>,
+			<a href="https://www.edgehill.ac.uk/computerscience/people/academic-staff/ardhendu-behera/">Ardhendu Behera</a>
+			
                         <br><br>
                       <p>In this paper, we look into the problem of estimating per-pixel depth map for
                           monocular night images.</p>
                         <em>ECCV</em>, 2020, (*Accepted) | <a href="javascript:toggleblock('eccv_20_abs')">Abstract</a>
                         <br>
                       <p align="justify"> <i id="eccv_20_abs" style="display: none;">
-                        In this paper, we look into the problem of estimating
-			per-pixel depth map for ordinary RGB monocular night-
-			time images. The state-of-the art day-time depth estimation
-			methods fail miserably when tested with night-time images
-			due to a large domain shift between them. The usual photo-
-			metric losses used for training these networks may not work
-			for night-time images due to the absence of uniform lighting
-			which are commonly present in day-time images, making it
-			a difficult problem to solve. We propose to solve this prob-
-			lem by posing it as a domain adaptation problem where a
-			network trained with day-time images is adapted to work
-			for night-time images. Specifically, an encoder is trained
-			to generate features from night-time images which are in-
-			distinguishable from those obtained from day-time images
-			by using a PatchGAN-based adversarial discriminative do-
-			main adaptation technique. Unlike the existing methods
-			that directly adapt depth prediction, we propose to adapt
-			feature maps obtained from the convolutional layers of the
-			encoder network so that a day-time decoder can be directly
-			used for depth prediction from these adapted features. The
-			resulting method is termed as “Adversarial Domain Fea-
-			ture Adaptation (ADFA)” method and its efficacy is demon-
-			strated through experimentation on the challenging Oxford
-			night driving dataset. To the best of our knowledge, this
-			work is a first of its kind to estimate depth from uncon-
-			strained night-time monocular RGB images in a completely
-			unsupervised fashion. The usefulness and effectiveness of
-			the proposed algorithm is further validated through its ap-
-			plication to a visual place recognition problem where it is
-			shown to outperform other state-of-the-art methods in this
-			category</i></p>
+                         In this paper, we look into the problem of estimating per-pixel depth maps
+			 from unconstrained RGB monocular night-time images which is a difficult problem 
+			 that has not been addressed adequately in the literature. The state-of-the- art day-time
+			 depth estimation methods fail miserably when tested with night-time images due to a large 
+			 domain shift between them. The usual photo-metric losses used for training these networks
+			 may not work for night-time images due to the absence of uniform lighting which is commonly
+			 present in day-time images, mak- ing it a difficult problem to solve. We propose to solve 
+			 this problem by posing it as a domain adaptation problem where a network trained with day-time 
+			 images is adapted to work for night-time images. Specifically, an encoder is trained to generate 
+			features from night-time images that are indistinguishable from those obtained from day-time images 
+			by using a PatchGAN-based adversarial discrim- inative learning method. Unlike the existing methods 
+			that directly adapt depth prediction (network output), we propose to adapt feature maps obtained from 
+			the encoder network so that a pre-trained day-time depth decoder can be directly used for predicting 
+			depth from these adapted features.
+			 Hence, the resulting method is termed as “Adversarial Domain Feature Adaptation (ADFA)” and 
+			its efficacy is demonstrated through experimentation on the challenging Oxford night driving dataset. 
+			To the best of our knowledge, this work is a first of its kind to estimate depth from unconstrained 
+			night-time monocular RGB images that uses a com- pletely unsupervised learning process. 
+			The modular encoder-decoder architecture for the proposed ADFA method allows us to use the encoder 
+			module as a feature extractor which can be used in many other applications. One such application 
+			is demonstrated where the features obtained from our adapted encoder network is shown to outperform 
+			other state-of-the-art methods in a visual place recogni- tion problem, thereby, 
+			further establishing the usefulness and effectiveness of the proposed approach.</i></p>
 
 
                     </td>
