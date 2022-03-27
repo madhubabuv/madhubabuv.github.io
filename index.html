@@ -6,7 +6,7 @@
 <script>
 
 const database = ['publications_2020-2022','publications_2018-2020','publications_2018']
-function toggleblock(query)
+function togglecell(query)
 {
     clearContent(database);
    var block = document.getElementById(query);
@@ -21,6 +21,22 @@ function toggleblock(query)
     block.style.display = 'none' ;
    }
 }
+
+function toggleblock(query)
+{
+   var block = document.getElementById(query);
+   
+   if (block.style.display == 'none') 
+        {
+        block.style.display = 'block' ;
+        } 
+
+   else 
+   {
+    block.style.display = 'none' ;
+   }
+}
+
 
 function clearContent(blockIds)
 {
@@ -109,9 +125,9 @@ function clearContent(blockIds)
 		                <heading>Publications</heading>
                         <br>
                         <br>
-                        <a href="javascript:toggleblock('publications_2020-2022')"><strong>2022 - 2020</strong></a> |
-                        <a href="javascript:toggleblock('publications_2018-2020')"><strong>2020 - 2018</strong></a> |
-                        <a href="javascript:toggleblock('publications_2018')"><strong>2018 - before</strong></a>|
+                        <a href="javascript:togglecell('publications_2020-2022')"><strong>2022 - 2020</strong></a> |
+                        <a href="javascript:togglecell('publications_2018-2020')"><strong>2020 - 2018</strong></a> |
+                        <a href="javascript:togglecell('publications_2018')"><strong>2018 - before</strong></a>|
             
                     </td>
                 </tr>
@@ -144,7 +160,7 @@ function clearContent(blockIds)
                             <br><br>
                             <p> we present what is thus, to our knowledge, the first system to perform simultaneous mapping 
                               and multi-person 3D human pose estimation from a monocular camera mounted on a single UAV.</p>
-                            <em>ICRA</em>, 2022 | <a href="javascript:toggleblock('iros_22_abs')">Abstract</a> 
+                            <em>IROS</em>, 2022* (Under Review) | <a href="javascript:toggleblock('iros_22_abs')">Abstract</a> 
                             <br>
                             <p align="justify"> <i id="iros_22_abs" style="display: none;">
                             Unmanned aerial vehicles (UAVs) have been used for many applications in recent years, from urban search and rescue, 
