@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-7580334-2');
+<script>
 
-    </script-->
-
-    <script>
-      function toggleblock(blockId)
+const database = ['publications_2020-2022','publications_2018-2020','publications_2018']
+function toggleblock(query)
+{
+    clearContent(database);
+   var block = document.getElementById(query);
+   
+   if (block.style.display == 'none') 
         {
-   var block = document.getElementById(blockId);
-   if (block.style.display == 'none') {
-    block.style.display = 'block' ;
-   } else {
+        block.style.display = 'block' ;
+        } 
+
+   else 
+   {
     block.style.display = 'none' ;
    }
 }
 
-    </script>
+function clearContent(blockIds)
+{
+    for (var i = 0; i < blockIds.length; i++)
+    {
+        var block = document.getElementById(blockIds[i]);
+    
+            block.style.display = 'none' ;
+    }
+}
 
-    <title>Madhu Vankadari</title>
+</script>
 
-
-    <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<title>Madhu Vankadari</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -46,33 +51,30 @@
                         <p style="text-align:center">
                             <name>Madhu Vankadari</name>
                         </p>
-                        <p>I am a DPhil student at the University of Oxford, working under the supervision of Prof. Niki Trigoni and Prof. Andrew Markhem. My main focus
-			is into the problems of Visual SLAM such as odometry and depth-estimation.
+                        <p>I am a 2nd year DPhil student at the <a href= "www.ox.ac.uk/"> University of Oxford</a>, working under the supervision of 
+                            <a href= "https://www.cs.ox.ac.uk/people/niki.trigoni/">Prof. Niki Trigoni</a> and<a href = "https://www.cs.ox.ac.uk/people/andrew.markham/"> Prof. Andrew Markhem</a>.
+                            
                         </p>
                         <p>
-                             I completed my bachelors degree with major in Mechanical Engineering
-                            at <a href="http://www.rgukt.in/">Rajiv Gandhi University of Knowledge Technologies</a>.
+                             My undergraduate degree is in Mechanical Engineering
+                            at <a href="http://www.rgukt.in/">Rajiv Gandhi University of Knowledge Technologies</a> and I never did my Masters Degree.
                         </p>
                         <p style="text-align:center">
+                            <a href="data/resume.pdf">Resume</a> &nbsp / &nbsp
                             <a href="https://scholar.google.co.in/citations?user=St1130EAAAAJ&hl=en">Google Scholar</a>
                             &nbsp/&nbsp
                             <a href="https://in.linkedin.com/in/madhubabuv"> LinkedIn </a> &nbsp/&nbsp
 			    <a href="https://github.com/madhubabuv">Github</a>&nbsp/&nbsp
-                            <a href="mailto:accesstomadhu@gmail.com">Email</a>&nbsp/&nbsp<br><br>
-	                    <a href="data/resume.pdf">CV</a> &nbsp/&nbsp
+                            <a href="mailto:accesstomadhu@gmail.com">Email</a>&nbsp
 			    <!--a href="data/research_proposal.pdf">Research Proposal</a> &nbsp/&nbsp-->
-	                     <a href="#publications">Publications</a> 
-
-                        </p>
-                       <br>
-                        <h4>We choose to go to the moon in this decade and do the other things there <br><br>
-				not because they are easy, but because they are hard. <br><br>
-
-				-- John F. Kennedy, 1962
+	            </p>
+                <br>
+                <h4>We choose to go to the moon in this decade and do the other things there <br>
+				not because they are easy, but because they are hard. <br> - John F. Kennedy, 1962
 				</h4>
                     </td>
                         <td style="padding:2.5%;width:40%;max-width:40%">
-                        <img style="width:100%;max-width:100%" alt="profile photo" src="new_imgs/madhu_circle.png" class="hoverZoomLink"/>
+                        <img style="width:98%;height:23%;" alt="profile photo" src="new_imgs/pic_5.png" class="hoverZoomLink"/>
                         </td>
                 </tr>
                 </tbody>
@@ -85,80 +87,174 @@
                     <td style="padding:20px;width:100%;vertical-align:middle">
                         <heading>Research</heading>
                         <p>
-                            I'm interested in robotics, computer vision and machine learning.
-                            Much of my research so far is on monocular depth and ego-motion estimation. I have also worked on
-                          drones and manipulators.
+                            I worked with many robots such as manipulators, ground and Aerail Vechicles. I aim to make these robots a little bit safer than <emph>today</emph>. 
+                            Currently, I am working on large-scale localization and mapping problems which has potential applications in Autonomous Driving, Augmented and Virtual Reality areas. 
                         </p>
-			<p><strong>Skills:</strong>
+			            <p><strong>Skills:</strong>
 						  <a href="https://www.python.org/">Python</a> |
 						  <a href='https://www.tensorflow.org/'>Tensorflow</a> |
 						  <a href='https://pytorch.org/'>PyTorch</a> |
 						  <a href="https://www.ros.org/">ROS</a> |
-                                                  <a href="http://gazebosim.org/">Gazebo</a>
+                          <a href="http://gazebosim.org/">Gazebo</a>
 						 </p>
+                         <p><strong>Conference Venues:</strong>
+                        <a href = '#'> ECCV(1) &#10004;</a>
+                        <a href = '#'>IJCAI(1) &#10004;</a> 
+                        <a href = '#'>ICRA(2) &#10004;</a>  
+                        <a href = '#'>IROS(3) &#10004;</a> 
+                        <a href = '#'>CORL(1) &#10004;</a>
                       	<br>
-		     <heading>Publications</heading>
+                        <br>
+
+		                <heading>Publications</heading>
+                        <br>
+                        <br>
+                        <a href="javascript:toggleblock('publications_2020-2022')"><strong>2022 - 2020</strong></a> |
+                        <a href="javascript:toggleblock('publications_2018-2020')"><strong>2020 - 2018</strong></a> |
+                        <a href="javascript:toggleblock('publications_2018')"><strong>2018 - before</strong></a>|
+            
                     </td>
                 </tr>
 		
                 </tbody>
             </table>
 
-            <table id="publications" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <table id="publications_2020-2022" style="width:100%;border:0px;border-spacing:0px;
+                                            border-collapse:separate;margin-right:auto;
+                                            margin-left:auto; display: block;" >
                 <tbody>
+                    <tr id="iros_22" >
+                        <td style="padding:10px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='new_imgs/iros_22.png'>
+                            </div>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a href="#iros_22">
+                                <papertitle>Real-Time Hybrid Mapping of Populated Indoor Scenes using a Low-Cost Monocular UAV </papertitle>
+                            </a>
+                            <br>
+                            <a href="#">Stuart Golodetz</a>,
+                            <strong>Madhu Vankadari</strong>,
+                            <a href="#">Aluna Everitt</a>,
+                            <a href="#">Sangyun Shin</a>,
+                            <a href="#">Andrew Markham</a>,
+                            <a href="#">Niki Trigoni</a>
+
+                            <br><br>
+                            <p> we present what is thus, to our knowledge, the first system to perform simultaneous mapping 
+                              and multi-person 3D human pose estimation from a monocular camera mounted on a single UAV.</p>
+                            <em>ICRA</em>, 2022 | <a href="javascript:toggleblock('iros_22_abs')">Abstract</a> 
+                            <br>
+                            <p align="justify"> <i id="iros_22_abs" style="display: none;">
+                            Unmanned aerial vehicles (UAVs) have been used for many applications in recent years, from urban search and rescue, 
+                            to agricultural surveying, to autonomous underground mine exploration. However, deploying UAVs in tight, indoor spaces, 
+                            especially close to humans, remains a challenge. One solution, when limited payload is required, is to use micro- UAVs, 
+                            which pose less risk to humans and typically cost less to replace after a crash. However, micro-UAVs can only carry a 
+                            limited sensor suite, e.g. a monocular camera instead of a stereo pair or LiDAR, complicating tasks like dense mapping 
+                            and markerless multi-person 3D human pose estimation, which are needed to operate in tight environments around people. 
+                            Monocular approaches to such tasks exist, and dense monocular mapping approaches have been successfully deployed for UAV 
+                            applications. However, despite many recent works on both marker-based and markerless multi-UAV single-person motion capture, 
+                            markerless single-camera multi-person 3D human pose estimation remains a much earlier-stage technology, and we are not 
+                            aware of existing attempts to deploy it in an aerial context. In this paper, we present what is thus, to our knowledge, 
+                            the first system to perform simultaneous mapping and multi-person 3D human pose estimation from a monocular camera 
+                            mounted on a single UAV. In particular, we show how to loosely couple state-of-the-art monocular depth estimation and 
+                            monocular 3D human pose estimation approaches to reconstruct a hybrid map of a populated indoor scene in real time.
+                            We validate our component-level design choices via extensive experiments on the large-scale ScanNet and GTA-IM datasets. 
+                            To evaluate our system-level performance, we also construct a new Oxford Hybrid Mapping dataset of populated indoor scenes
+                            </i></p>
+                        </td>                
+                </tr> 
+                    
+                    
+                    <!--ICRA 2022-->
 
 
-                <!--tr id="icra_2020">
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                        <div class="one">
-                            <img src='new_imgs/icra_2020.png'>
-                        </div>
+                    <tr id="icra_22" >
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='new_imgs/icra_22.png'>
+                            </div>
+    
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a href="#icra_22">
+                                <papertitle>Attentive One-Shot Meta-Imitation Learning From Visual Demonstration </papertitle>
+                            </a>
+                            <br>
+                                <a href="#">Vishal Bhutani</a>,
+                                <strong>Madhu Vankadari</strong>,
+                                <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>,
+                                <a href="https://www.edgehill.ac.uk/computerscience/people/academic-staff/ardhendu-behera/">Ardhendu Behera</a>
+                                <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                                <br><br>
+                          <p> An attempt is made to solve this problem in this paper by proposing a deep meta-imitation learning framework 
+                          comprising of an attentive-embedding net- work and a control network, capable of 
+                          learning a new task in an end-to-end manner while requiring only one or a few visual demonstrations</p>
+                            <em>ICRA</em>, 2022 | <a href="javascript:toggleblock('icra_22_abs')">Abstract</a> 
+                            <br>
+                          <p align="justify"> <i id="icra_22_abs" style="display: none;">
+                            The ability to apply a previously-learned skill (e.g., pushing) to a new task (context or object)
+                             is an important requirement for new-age robots. An attempt is made to solve this problem in this 
+                             paper by proposing a deep meta-imitation learning framework comprising of an attentive-embedding 
+                             net- work and a control network, capable of learning a new task in an end-to-end manner while 
+                             requiring only one or a few visual demonstrations. The feature embeddings learnt by incorporating 
+                             spatial attention is shown to provide higher embedding and control accuracy compared to other 
+                             state-of-the-art methods such as TecNet and MIL. The interaction between the embedding 
+                             and the control networks is improved by using multiplicative skip-connections and is shown to 
+                             overcome the overfitting of the trained model. The superiority of the proposed model is 
+                             established through rigorous experimentation using a publicly available dataset and a 
+                             new dataset created using PyBullet. Several ablation studies have been carried out to justify 
+                             the design choices</i></p>
+    
+    
+                        </td>
+                    </tr> <!--ICRA 2022-->
 
-                    </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="#icra_2020">
-                            <papertitle>Cyclically Consistent Unsupervised Monocular Depth estimation using patchGANs </papertitle>
-                        </a>
-                        <br>
-                        <strong>Madhu Vankadari</strong>,
-                        <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
-                        <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>
-                        <br><br>
+                    <tr id="corl_21" >
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                            <div class="one">
+                                <img src='new_imgs/corl_21.png'>
+                            </div>
+    
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                            <a href="#corl_21">
+                                <papertitle>SeqMatchNet: Contrastive Learning with Sequence Matching for Place Recognition & Relocalization </papertitle>
+                            </a>
+                            <br>
+                             <a href="https://www.roboticvision.org/rv_person/sourav-garg/">Sourav Garg</a>,
+                                <strong>Madhu Vankadari</strong>,
+                                <a href="https://wiki.qut.edu.au/display/cyphy/Michael+Milford">Michael Milford</a>
+                                <br><br>
+                          <p>In this work, for the first time, we bridge the gap between single image representation learning 
+                              and sequence matching through" SeqMatchNet" which transforms the single image descriptors such 
+                              that they become more responsive to the sequence matching metric</p>
+                            <em>CORL</em>, 2021| <a href="javascript:toggleblock('eccv_20_abs')">Abstract</a> | <a href = "https://proceedings.mlr.press/v164/garg22a/garg22a.pdf">Paper</a> | <a href="https://github. com/oravus/SeqMatchNet">Code</a>
+                            <br>
+                          <p align="justify"> <i id="eccv_20_abs" style="display: none;">
+                            Visual Place Recognition (VPR) for mobile robot global relocalization is a well-studied problem, 
+                            where contrastive learning based representation training methods have led to state-of-the-art 
+                            performance. However, these methods are mainly designed for single image based VPR, where sequential 
+                            information, which is ubiquitous in robotics, is only used as a post-processing step for filtering single 
+                            image match scores, but is never used to guide the representation learning process itself. In this work, 
+                            for the first time, we bridge the gap between single image representation learning and sequence matching 
+                            through" SeqMatchNet" which transforms the single image descriptors such that they become more responsive 
+                            to the sequence matching metric. We propose a novel triplet loss formulation where the distance metric is 
+                            based on" sequence matching", that is, the aggregation of temporal order-based Euclidean distances computed 
+                            using single images. We use the same metric for mining negatives online during the training which helps the 
+                            optimization process by selecting appropriate positives and harder negatives. To overcome the computational 
+                            overhead of sequence matching for negative mining, we propose a 2D convolution based formulation of sequence 
+                            matching for efficiently aggregating distances within a distance matrix computed using single images. We show 
+                            that our proposed method achieves consistent gains in performance as demonstrated on four benchmark datasets. 
+                            </i></p>
+    
+    
+                        </td>
+                    </tr> <!--IROS 2020-->
+    
 
-                        <p>The famous idea of cycle consistency is used to imporve the monocular depth
-                          estimation using patchGAN paradigm</p>
-
-                        <em>ICRA</em>, 2020, (*in Review) | <a href="javascript:toggleblock('icra_20_abs')">Abstract</a>
-                        <br>
-
-
-                      <p align="justify"> <i id="icra_20_abs" style="display: none;">
-                         In this paper, we propose a PatchGAN-based cycli-
-                        cally consistent deep learning architecture for monocular depth
-                        estimation using unsupervised learning. Cycle-consistency is
-                        achieved by introducing a Generator module, consisting of two
-                        deep networks, namely disp-Net (that learns a F ) and inv-disp-
-                        Net (that learns a function F'). The disp-Net F learns to predict
-                        disparity for a given monocular image. The inv-disp-Net F'
-                        regenerates the input image using the predicted disparity and
-                        the opposite stereo pair of the input image. The regenerated
-                        image is then evaluated by using a patch-based discriminator
-                        network that considers the input image as reference; thereby
-                        making the entire process cyclically consistent. This adversarial
-                        approach of learning, that enforces the function F' to be
-                        cycle-consistent with F , in a way constraints the possible
-                        solution mappings for disp-Net F , resulting into more accurate
-                        depth map. We perform several experimental studies and
-                        compared the results with existing state-of-the-art techniques
-                        for evaluating the performance of our approach. The proposed
-                        architecture is shown to provide about 13% improvement in
-                        terms of absolute error and about 8% improvement in RMSE
-                        metric over the latest state-of-the-art method on the popular
-                        outdoor driving KITTI and Oxford-robot car datasets, thereby,
-                        creating a new benchmark in this field</i></p>
-                    </td>
-                </tr--> <!--ICRA 2020-->
-                <tr id="aaai_20" >
+                <tr id="eccv_20" >
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
                             <img src='new_imgs/eccv_2020.jpg'>
@@ -166,20 +262,19 @@
 
                     </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="#aaai_20">
+                        <a href="#eccv_20">
                             <papertitle>Unsupervised Monocular Depth Estimation for Night-time Images using Adversarial Domain Feature Adaptation </papertitle>
                         </a>
                         <br>
-                        <strong>Madhu Vankadari</strong>,
-			<a href="https://www.roboticvision.org/rv_person/sourav-garg/">Sourav Garg</a>,
-                        <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
-                        <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>,
-			<a href="https://www.edgehill.ac.uk/computerscience/people/academic-staff/ardhendu-behera/">Ardhendu Behera</a>
-			
-                        <br><br>
+                            <strong>Madhu Vankadari</strong>,
+                            <a href="https://www.roboticvision.org/rv_person/sourav-garg/">Sourav Garg</a>,
+                            <a href="https://sites.google.com/site/swagatkumar/home">Swagat Kumar</a>,
+                            <a href="https://www.iitk.ac.in/new/anima-majumder">Anima Majumder</a>,
+                            <a href="https://www.edgehill.ac.uk/computerscience/people/academic-staff/ardhendu-behera/">Ardhendu Behera</a>
+                            <br><br>
                       <p>In this paper, we look into the problem of estimating per-pixel depth map for
                           monocular night images.</p>
-                        <em>ECCV</em>, 2020, (*Accepted) | <a href="javascript:toggleblock('eccv_20_abs')">Abstract</a>
+                        <em>ECCV</em>, 2020| <a href="javascript:toggleblock('eccv_20_abs')">Abstract</a> | <a href = "https://arxiv.org/abs/2010.01402">Paper</a>
                         <br>
                       <p align="justify"> <i id="eccv_20_abs" style="display: none;">
                          In this paper, we look into the problem of estimating per-pixel depth maps
@@ -210,7 +305,10 @@
                     </td>
                 </tr> <!--IROS 2020-->
 
-<tr id='at_icra_20' >
+
+                
+
+            <tr id='at_iros_20' >
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
                             <img src='new_imgs/iros_2020.jpg'>
@@ -218,7 +316,7 @@
 
                     </td>
                     <td style="padding:20px;width:75%;vertical-align:middle">
-                        <a href="#roman_19">
+                        <a href="#at_iros_20">
                             <papertitle>Unsupervised Depth and Confidence Prediction from Monocular Image
 using Bayesian Inference</papertitle>
                         </a>
@@ -235,7 +333,7 @@ using Bayesian Inference</papertitle>
 				learning framework with Bayesian inference for improving
 				the accuracy of per-pixel depth prediction from monocular
 				RGB images.  </p>
-                        <em>IROS</em>, 2020 (*Accepted) | <a href="javascript:toggleblock('at_icra_20_abs')">Abstract</a>| <!--a href="#">Accepted</a> | <a href="data/roman_19.pdf">Slides</a-->
+                        <em>IROS</em>, 2020 | <a href="javascript:toggleblock('at_icra_20_abs')">Abstract</a>| <a href="http://ras.papercept.net/images/temp/IROS/files/1057.pdf">Paper</a> <!--| <a href="data/roman_19.pdf">Slides</a-->
                         <br>
                       <p align="justify"> <i id="at_icra_20_abs" style="display: none;">
                         In this paper, we propose an unsupervised deep
@@ -287,7 +385,7 @@ Imitation Learning using Video Demonstration</papertitle>
                       <p>In this paper we present a new depth and temporal-aware visual place recognition system
                           that solves the opposing viewpoint, extreme appearance-change visual place recognition
                           problem. </p>
-                        <em>ICRA</em>, 2020 (*Accepted) | <a href="javascript:toggleblock('at_icra_20_abs')">Abstract</a> | <a href="https://ras.papercept.net/proceedings/ICRA20/2470_VI.mp4">Video</a> | <a href="https://ras.papercept.net/proceedings/ICRA20/2470_VP1.mp4">Presentation</a
+                        <em>ICRA</em>, 2020 | <a href="javascript:toggleblock('at_icra_20_abs')">Abstract</a> | <a href="https://ras.papercept.net/proceedings/ICRA20/2470_VI.mp4">Video</a> | <a href="https://ras.papercept.net/proceedings/ICRA20/2470_VP1.mp4">Presentation</a
                         <br>
                       <p align="justify"> <i id="at_icra_20_abs" style="display: none;">
                         This paper proposes an end-to-end self-supervised
@@ -324,6 +422,12 @@ Imitation Learning using Video Demonstration</papertitle>
 
                     </td>
                 </tr> <!--ICRA 2020-->
+
+                </tbody>
+                </table>
+
+                <table id="publications_2018-2020" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto; display: none;">
+                <tbody>
                 <tr id="ijcai_19" >
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
@@ -528,10 +632,12 @@ Imitation Learning using Video Demonstration</papertitle>
                                 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
                                  picture-in-picture" allowfullscreen></iframe>
                       </div>
-
-
                     </td>
-                </tr> <!--ICUAS 2018-->
+                </tr>
+                </tbody>
+            </table>
+                <table id="publications_2018" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;display: none;">
+                <tbody>
                 <tr id='icra_17' >
                     <td style="padding:20px;width:25%;vertical-align:middle">
                         <div class="one">
@@ -612,279 +718,6 @@ Imitation Learning using Video Demonstration</papertitle>
                 </tbody>
             </table>
 
-            <!--table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td>
-                        <heading>Service</heading>
-                    </td>
-                </tr>
-                </tbody>
-            </table-->
-            <!--table width="100%" align="center" border="0" cellpadding="20">
-                <tbody>
-                <tr>
-                    <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
-                    <td width="75%" valign="center">
-                        <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                        <br>
-                        <br>
-                        <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding:20px;width:25%;vertical-align:middle">
-                        <img src="images/cs188.jpg" alt="cs188">
-                    </td>
-                    <td width="75%" valign="center">
-                        <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student
-                            Instructor, CS188 Spring 2011</a>
-                        <br>
-                        <br>
-                        <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student
-                            Instructor, CS188 Fall 2010</a>
-                        <br>
-                        <br>
-                        <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach",
-                            3rd Edition</a>
-                    </td>
-                </tr>
-                </tbody>
-            </table-->
-            <!--table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                <tbody>
-                <tr>
-                    <td style="padding:0px">
-                        <br>
-                        <p style="text-align:right;font-size:small;">
-                            Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source
-                            code</a>,
-                            just add a link back to my website. Send me an email when you're done and I'll link to your
-                            new page from here:
-                            <a href="https://cs.stanford.edu/~poole/">&#10025;</a>
-                            <a href="http://www.cs.berkeley.edu/~akar/">&#10025;</a>
-                            <a href="http://www.eecs.berkeley.edu/~biancolin">&#10025;</a>
-                            <a href="http://www.rossgirshick.info/">&#10025;</a>
-                            <a href="http://www.cs.cmu.edu/~igkioule/">&#10025;</a>
-                            <a href="http://kelvinxu.github.io/">&#10025;</a>
-                            <a href="http://imagine.enpc.fr/~groueixt/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~cbfinn/">&#10025;</a>
-                            <a href="http://disi.unitn.it/~nabi/">&#10025;</a>
-                            <a href="http://changyeobshin.com/">&#10025;</a>
-                            <a href="https://mbanani.github.io/">&#10025;</a>
-                            <a href="https://aseembits93.github.io">&#10025;</a>
-                            <a href="http://fuwei.us/">&#10025;</a>
-                            <a href="http://www-bcf.usc.edu/~iacopoma/">&#10025;</a>
-                            <a href="https://lorisbaz.github.io/">&#10025;</a>
-                            <a href="https://dplarson.info/">&#10025;</a>
-                            <a href="http://chapiro.net/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~vitchyr/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~kellman/">&#10025;</a>
-                            <a href="http://www0.cs.ucl.ac.uk/staff/C.Godard/">&#10025;</a>
-                            <a href="http://www.cs.toronto.edu/~byang/">&#10025;</a>
-                            <a href="http://people.kyb.tuebingen.mpg.de/harmeling/">&#10025;</a>
-                            <a href="https://prakashmurali.bitbucket.io/">&#10025;</a>
-                            <a href="http://www.cs.bham.ac.uk/~exa371/">&#10025;</a>
-                            <a href="http://prosello.com/">&#10025;</a>
-                            <a href="http://www.ee.ucr.edu/~nmithun/">&#10025;</a>
-                            <a href="https://rmullapudi.bitbucket.io/">&#10025;</a>
-                            <a href="http://www.briangauch.com/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~coline/">&#10025;</a>
-                            <a href="https://www.andrew.cmu.edu/user/sjayasur/website.html">&#10025;</a>
-                            <a href="http://www.eecs.berkeley.edu/~rakelly/">&#10025;</a>
-                            <a href="https://gkioxari.github.io/">&#10025;</a>
-                            <a href="http://ai.stanford.edu/~hsong/">&#10025;</a>
-                            <a href="http://www.ee.ucr.edu/~mbappy/">&#10025;</a>
-                            <a href="http://adithyamurali.com/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~khoury/">&#10025;</a>
-                            <a href="https://prashanthtk.github.io/">&#10025;</a>
-                            <a href="http://tomhenighan.com/">&#10025;</a>
-                            <a href="http://mbchang.github.io/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~haarnoja/">&#10025;</a>
-                            <a href="http://web.stanford.edu/~sfort1/">&#10025;</a>
-                            <a href="http://www.arkin.xyz/">&#10025;</a>
-                            <a href="http://i-am-karan-singh.github.io/">&#10025;</a>
-                            <a href="https://pxlong.github.io/">&#10025;</a>
-                            <a href="https://dheeraj2444.github.io/">&#10025;</a>
-                            <a href="https://fabienbaradel.github.io/">&#10025;</a>
-                            <a href="https://ankitdhall.github.io/">&#10025;</a>
-                            <a href="http://nafiz.ml/">&#10025;</a>
-                            <a href="http://www.cs.cmu.edu/~aayushb">&#10025;</a>
-                            <a href="http://bjornstenger.github.io/">&#10025;</a>
-                            <a href="http://users.eecs.northwestern.edu/~mif365/">&#10025;</a>
-                            <a href="https://www.macs.hw.ac.uk/~ic14/">&#10025;</a>
-                            <a href="https://ai.stanford.edu/~kaidicao/">&#10025;</a>
-                            <a href="http://hengfan.byethost7.com/">&#10025;</a>
-                            <a href="https://reyhaneaskari.github.io/">&#10025;</a>
-                            <a href="https://tianheyu927.github.io/">&#10025;</a>
-                            <a href="http://people.csail.mit.edu/janner/">&#10025;</a>
-                            <a href="http://www.sjoerdvansteenkiste.com/">&#10025;</a>
-                            <a href="http://joaoloula.github.io/">&#10025;</a>
-                            <a href="https://bhairavmehta95.github.io/">&#10025;</a>
-                            <a href="https://palmieri.github.io/">&#10025;</a>
-                            <a href="https://psuriana.github.io/">&#10025;</a>
-                            <a href="http://yushi2.web.engr.illinois.edu/">&#10025;</a>
-                            <a href="http://ruthcfong.github.io/">&#10025;</a>
-                            <a href="https://shraman-rc.github.io/">&#10025;</a>
-                            <a href="http://rahulgarg.com/">&#10025;</a>
-                            <a href="http://www.cs.cmu.edu/~inigam/">&#10025;</a>
-                            <a href="http://djstrouse.com/">&#10025;</a>
-                            <a href="https://lekhamohan.github.io/">&#10025;</a>
-                            <a href="https://avijit9.github.io/">&#10025;</a>
-                            <a href="http://www.seas.ucla.edu/~sahba/">&#10025;</a>
-                            <a href="https://pages.jh.edu/~falambe1/">&#10025;</a>
-                            <a href="http://www.dcc.fc.up.pt/~vitor.cerqueira/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~bmild/">&#10025;</a>
-                            <a href="https://web.eecs.umich.edu/~subh/">&#10025;</a>
-                            <a href="http://www.cs.utexas.edu/~pgoyal/">&#10025;</a>
-                            <a href="http://www.eecs.wsu.edu/~fchowdhu/">&#10025;</a>
-                            <a href="https://aarzchan.github.io/">&#10025;</a>
-                            <a href="https://www.seas.upenn.edu/~oleh/">&#10025;</a>
-                            <a href="http://shamak.github.io/">&#10025;</a>
-                            <a href="http://jianfeng.us/">&#10025;</a>
-                            <a href="https://pulkitkumar95.github.io/">&#10025;</a>
-                            <a href="https://epiception.github.io/">&#10025;</a>
-                            <a href="https://weimengpu.github.io/">&#10025;</a>
-                            <a href="http://users.ices.utexas.edu/~faraz/">&#10025;</a>
-                            <a href="https://vitorgodeiro.github.io/">&#10025;</a>
-                            <a href="http://cgm.technion.ac.il/people/Roey/">&#10025;</a>
-                            <a href="https://mancinimassimiliano.github.io/">&#10025;</a>
-                            <a href="https://roshanjrajan.me/">&#10025;</a>
-                            <a href="http://irc.cs.sdu.edu.cn/~qingnan/">&#10025;</a>
-                            <a href="http://individual.utoronto.ca/yuenj/">&#10025;</a>
-                            <a href="https://akhileshgotmare.github.io/">&#10025;</a>
-                            <a href="http://vllab.ucmerced.edu/nakul/">&#10025;</a>
-                            <a href="https://hasibzunair.github.io/">&#10025;</a>
-                            <a href="http://dalezhou.com/">&#10025;</a>
-                            <a href="https://abhoi.github.io/">&#10025;</a>
-                            <a href="https://www.cse.unr.edu/~jyi/">&#10025;</a>
-                            <a href="http://www.liuzhaolun.com/">&#10025;</a>
-                            <a href="https://abhisheknaik.me/">&#10025;</a>
-                            <a href="https://cfernandezlab.github.io/">&#10025;</a>
-                            <a href="https://aasharma90.github.io/">&#10025;</a>
-                            <a href="https://kdizon.github.io/">&#10025;</a>
-                            <a href="https://www.cse.wustl.edu/~zhihao.xia/">&#10025;</a>
-                            <a href="http://mmozes.net/">&#10025;</a>
-                            <a href="https://kpertsch.github.io/">&#10025;</a>
-                            <a href="http://xiatianpei.com/">&#10025;</a>
-                            <a href="https://nsrishankar.github.io/">&#10025;</a>
-                            <a href="http://xujuefei.com/">&#10025;</a>
-                            <a href="https://www.cs.rochester.edu/u/lchen63/">&#10025;</a>
-                            <a href="http://deyachatterjee.github.io/">&#10025;</a>
-                            <a href="http://hossein1387.github.io/index.html">&#10025;</a>
-                            <a href="https://zx007zls.github.io/">&#10025;</a>
-                            <a href="http://people.eecs.berkeley.edu/~nol/">&#10025;</a>
-                            <a href="http://www.cs.princeton.edu/~jw60/">&#10025;</a>
-                            <a href="https://cseweb.ucsd.edu/~owen/">&#10025;</a>
-                            <a href="https://subhajitchaudhury.github.io/">&#10025;</a>
-                            <a href="https://sandarshp.github.io/">&#10025;</a>
-                            <a href="https://medhini.github.io/">&#10025;</a>
-                            <a href="http://cindyxinyiwang.github.io/">&#10025;</a>
-                            <a href="https://lasirenashann.github.io/">&#10025;</a>
-                            <a href="http://ambuj.se/">&#10025;</a>
-                            <a href="http://kylehsu.me/">&#10025;</a>
-                            <a href="https://ujjwal95.github.io/">&#10025;</a>
-                            <a href="https://aditya5558.github.io/">&#10025;</a>
-                            <a href="http://www.majumderb.com/">&#10025;</a>
-                            <a href="http://ylqiao.net/">&#10025;</a>
-                            <a href="https://xiaochunliu.github.io/">&#10025;</a>
-                            <a href="https://dhawgupta.github.io/">&#10025;</a>
-                            <a href="http://cliu.info/">&#10025;</a>
-                            <a href="https://taochenshh.github.io/">&#10025;</a>
-                            <a href="http://www-scf.usc.edu/~ayushj/">&#10025;</a>
-                            <a href="https://zexuehe.github.io/">&#10025;</a>
-                            <a href="https://ofkar.github.io/">&#10025;</a>
-                            <a href="https://amir-arsalan.github.io/">&#10025;</a>
-                            <a href="https://vinamrabenara.github.io/">&#10025;</a>
-                            <a href="https://likojack.bitbucket.io/">&#10025;</a>
-                            <a href="http://www-personal.umich.edu/~zeyu/">&#10025;</a>
-                            <a href="https://utkarshojha.github.io/">&#10025;</a>
-                            <a href="https://fahmidmorshed.github.io/">&#10025;</a>
-                            <a href="https://www.cs.ubc.ca/~setarehc/">&#10025;</a>
-                            <a href="http://viveksolanki.com/">&#10025;</a>
-                            <a href="http://webdiis.unizar.es/~alcolea/">&#10025;</a>
-                            <a href="http://www.songyaojiang.com/">&#10025;</a>
-                            <a href="https://www.csee.umbc.edu/~bhp1/">&#10025;</a>
-                            <a href="http://acl.mit.edu/people">&#10025;</a>
-                            <a href="https://vignanv.com/">&#10025;</a>
-                            <a href="https://liuyicun.me/">&#10025;</a>
-                            <a href="https://heyuanmingong.github.io/">&#10025;</a>
-                            <a href="https://abhishekaich27.github.io/">&#10025;</a>
-                            <a href="https://www.cs.ubc.ca/~saeidnp/">&#10025;</a>
-                            <a href="https://uuujf.github.io/">&#10025;</a>
-                            <a href="https://csjcai.github.io/">&#10025;</a>
-                            <a href="https://iphyer.github.io/Mingren_Website/">&#10025;</a>
-                            <a href="https://binzhubz.github.io/">&#10025;</a>
-                            <a href="https://steinar.dev/">&#10025;</a>
-                            <a href="https://tnq177.github.io/">&#10025;</a>
-                            <a href="https://jonathan-schwarz.github.io/">&#10025;</a>
-                            <a href="http://www.ronnieclark.co.uk/">&#10025;</a>
-                            <a href="http://www.aparnadhinakaran.com/">&#10025;</a>
-                            <a href="https://zjysteven.github.io/">&#10025;</a>
-                            <a href="http://aakash30jan.github.io/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~shelhamer/">&#10025;</a>
-                            <a href="https://junaidcs032.github.io/">&#10025;</a>
-                            <a href="https://liangxuy.github.io/">&#10025;</a>
-                            <a href="http://www.public.asu.edu/~ssarka18/">&#10025;</a>
-                            <a href="https://www.cs.toronto.edu/~jennachoi/">&#10025;</a>
-                            <a href="https://amankhullar.github.io/">&#10025;</a>
-                            <a href="https://vijayvee.github.io/">&#10025;</a>
-                            <a href="https://anmolgoel.dev/">&#10025;</a>
-                            <a href="https://chanh.ee/">&#10025;</a>
-                            <a href="https://jefflai108.github.io/">&#10025;</a>
-                            <a href="https://pvskand.github.io/">&#10025;</a>
-                            <a href="https://ariostgx.github.io/website/">&#10025;</a>
-                            <a href="https://www.cs.utexas.edu/~shreyd/">&#10025;</a>
-                            <a href="https://www.cedrick.cc/">&#10025;</a>
-                            <a href="https://onlytailei.github.io/">&#10025;</a>
-                            <a href="https://people.cs.vt.edu/liminyang/">&#10025;</a>
-                            <a href="https://alexander-kirillov.github.io/">&#10025;</a>
-                            <a href="https://sites.cs.ucsb.edu/~yanju/">&#10025;</a>
-                            <a href="https://www.cct.lsu.edu/~cliu/">&#10025;</a>
-                            <a href="https://sid2697.github.io/">&#10025;</a>
-                            <a href="https://brendonjeromebutler.com/">&#10025;</a>
-                            <a href="https://bthananjeyan.github.io/">&#10025;</a>
-                            <a href="https://leonidk.com/">&#10025;</a>
-                            <a href="http://bopeng.space/">&#10025;</a>
-                            <a href="https://gautamigolani.github.io/">&#10025;</a>
-                            <a href="https://rohitrango.github.io/">&#10025;</a>
-                            <a href="https://prithv1.github.io/">&#10025;</a>
-                            <a href="https://www.idiap.ch/~tpereira/">&#10025;</a>
-                            <a href="https://felipefelixarias.github.io/">&#10025;</a>
-                            <a href="https://sophieschau.github.io/">&#10025;</a>
-                            <a href="https://wensun.github.io/">&#10025;</a>
-                            <a href="http://cs.umanitoba.ca/~kumarkm/">&#10025;</a>
-                            <a href="https://sourav-roni.github.io/">&#10025;</a>
-                            <a href="https://parskatt.github.io/">&#10025;</a>
-                            <a href="https://rauldiaz.github.io/">&#10025;</a>
-                            <a href="https://uzeful.github.io/">&#10025;</a>
-                            <a href="https://roeiherz.github.io/">&#10025;</a>
-                            <a href="http://relh.net/">&#10025;</a>
-                            <a href="https://ars-ashuha.ru/">&#10025;</a>
-                            <a href="https://prieuredesion.github.io/">&#10025;</a>
-                            <a href="https://tsujuifu.github.io/">&#10025;</a>
-                            <a href="https://pranoy-k.github.io/website/">&#10025;</a>
-                            <a href="https://xiaoleiz.github.io/">&#10025;</a>
-                            <a href="https://users.ece.cmu.edu/~bahn/">&#10025;</a>
-                            <a href="http://eracah.github.io/">&#10025;</a>
-                            <a href="https://adityakusupati.github.io/">&#10025;</a>
-                            <a href="https://agadetsky.github.io/">&#10025;</a>
-                            <a href="https://coh1211.github.io/">&#10025;</a>
-                            <a href="https://people.eecs.berkeley.edu/~kevinlin/">&#10025;</a>
-                            <a href="https://bucherb.github.io/">&#10025;</a>
-                            <a href="https://naman-ntc.github.io/">&#10025;</a>
-                            <a href="https://nicolay-r.github.io/">&#10025;</a>
-                            <a href="https://sakshambassi.github.io/">&#10025;</a>
-                            <a href="https://maheshmohanmr.github.io/publications/">&#10025;</a>
-                            <a href="http://byang.org/">&#10025;</a>
-                            <br>
-                            Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a
-                                href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
-                        </p>
-                    </td>
-                </tr>
-                </tbody>
-            </table-->
         </td>
     </tr>
 </table>
