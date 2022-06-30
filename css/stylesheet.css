@@ -139,3 +139,22 @@ img{
 span.highlight {
   background-color: #ffffd0;
 }
+{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+
+  width: 20.0%;
+  padding: 5px;
+  margin-left:20px;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
