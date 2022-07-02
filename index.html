@@ -134,7 +134,7 @@ function clearContent(blockIds)
                         <a href = '#'>IJCAI(1) &#10004;</a> 
                         <a href = '#'>ICRA(3) &#10004;</a>  
                         <a href = '#'>IROS(3) &#10004;</a> 
-                        <a href = '#'>CORL(2) &#10004;</a>
+                        <a href = '#'>CORL(1) &#10004;</a>
                       	<br>
                         <br>
 
@@ -143,7 +143,7 @@ function clearContent(blockIds)
                         <br>
                         <a href="javascript:togglecell('publications_2020-2022')"><strong>2022 - 2020</strong></a> |
                         <a href="javascript:togglecell('publications_2018-2020')"><strong>2020 - 2018</strong></a> |
-                        <a href="javascript:togglecell('publications_2018')"><strong>2018 - before</strong></a>|
+                        <a href="javascript:togglecell('publications_2018')"><strong>2018 - before</strong></a>
             
                     </td>
                 </tr>
@@ -180,7 +180,7 @@ function clearContent(blockIds)
 
                             <br><br>
                             <p> In this paper, we show how to use a combination of three techniques to allow the existing photometric losses to work for both day and nighttime images</p>
-                            <em>CORL</em>, 2022* (Under Review) | <a href="javascript:toggleblock('corl_22_abs')">Abstract</a> | <a href = "https://arxiv.org/abs/2206.13850">Paper</a>
+                            (Under Review) | <a href="javascript:toggleblock('corl_22_abs')">Abstract</a> | <a href = "https://arxiv.org/abs/2206.13850">Paper</a>
                             <br>
                             <p align="justify"> <i id="corl_22_abs" style="display: none;">
                             Self-supervised deep learning methods for joint depth and ego-motion estimation can yield accurate trajectories without needing ground-truth training data. However, as they typically use photometric losses, their performance can degrade significantly when the assumptions these losses make (e.g. temporal illumination consistency, a static scene, and the absence of noise and occlusions) are violated. This limits their use for e.g. nighttime sequences, which tend to contain many point light sources (including on dynamic objects) and low signal-to-noise ratio (SNR) in darker image regions. In this paper, we show how to use a combination of three techniques to allow the existing photometric losses to work for both day and nighttime images. First, we introduce a per-pixel neural intensity transformation to compensate for the light changes that occur between successive frames. Second, we predict a per-pixel residual flow map that we use to correct the reprojection correspondences induced by the estimated ego-motion and depth from the networks. And third, we denoise the training images to improve the robustness and accuracy of our approach. These changes allow us to train a single model for both day and nighttime images without needing separate encoders or extra feature networks like existing methods. We perform extensive experiments and ablation studies on the challenging Oxford RobotCar dataset to demonstrate the efficacy of our approach for both day and nighttime sequences.
@@ -216,7 +216,7 @@ function clearContent(blockIds)
                             <a href="#">Niki Trigoni</a>
 
                             <br><br>
-                            <p> we present what is thus, to our knowledge, the first system to perform simultaneous mapping 
+                            <p> We present what is thus, to our knowledge, the first system to perform simultaneous mapping 
                               and multi-person 3D human pose estimation from a monocular camera mounted on a single UAV.</p>
                             <em>IROS</em>, 2022 | <a href="javascript:toggleblock('iros_22_abs')">Abstract</a>| <a href ="https://arxiv.org/abs/2203.02453">Paper</a> 
                             <br>
